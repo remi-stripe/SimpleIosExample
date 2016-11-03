@@ -16,6 +16,8 @@
 		A5DA72371DCB94FA007F17CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DA72351DCB94FA007F17CD /* LaunchScreen.storyboard */; };
 		A5DA72421DCB94FA007F17CD /* SimpleIosExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DA72411DCB94FA007F17CD /* SimpleIosExampleTests.m */; };
 		A5DA724D1DCB94FA007F17CD /* SimpleIosExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DA724C1DCB94FA007F17CD /* SimpleIosExampleUITests.m */; };
+		A5EF079D1DCB969F0013E907 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF079C1DCB969F0013E907 /* Constants.m */; };
+		A5EF07A01DCB99230013E907 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF079F1DCB99230013E907 /* PaymentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		A5DA72481DCB94FA007F17CD /* SimpleIosExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleIosExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DA724C1DCB94FA007F17CD /* SimpleIosExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleIosExampleUITests.m; sourceTree = "<group>"; };
 		A5DA724E1DCB94FA007F17CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EF079B1DCB96910013E907 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A5EF079C1DCB969F0013E907 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A5EF079E1DCB98A30013E907 /* PaymentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		A5EF079F1DCB99230013E907 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +133,12 @@
 			children = (
 				A5DA722A1DCB94FA007F17CD /* AppDelegate.h */,
 				A5DA722B1DCB94FA007F17CD /* AppDelegate.m */,
+				A5EF079B1DCB96910013E907 /* Constants.h */,
+				A5EF079C1DCB969F0013E907 /* Constants.m */,
 				A5DA722D1DCB94FA007F17CD /* ViewController.h */,
 				A5DA722E1DCB94FA007F17CD /* ViewController.m */,
+				A5EF079E1DCB98A30013E907 /* PaymentViewController.h */,
+				A5EF079F1DCB99230013E907 /* PaymentViewController.m */,
 				A5DA72301DCB94FA007F17CD /* Main.storyboard */,
 				A5DA72331DCB94FA007F17CD /* Assets.xcassets */,
 				A5DA72351DCB94FA007F17CD /* LaunchScreen.storyboard */,
@@ -351,6 +361,8 @@
 				A5DA722F1DCB94FA007F17CD /* ViewController.m in Sources */,
 				A5DA722C1DCB94FA007F17CD /* AppDelegate.m in Sources */,
 				A5DA72291DCB94FA007F17CD /* main.m in Sources */,
+				A5EF07A01DCB99230013E907 /* PaymentViewController.m in Sources */,
+				A5EF079D1DCB969F0013E907 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

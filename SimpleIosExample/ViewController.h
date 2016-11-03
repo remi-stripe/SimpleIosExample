@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Stripe/Stripe.h>
 
-@interface ViewController : UIViewController
+typedef NS_ENUM(NSInteger, STPBackendChargeResult) {
+    STPBackendChargeResultSuccess,
+    STPBackendChargeResultFailure,
+};
 
+typedef void (^STPTokenSubmissionHandler)(STPBackendChargeResult status, NSError *error);
+
+@protocol STPBackendCharging <NSObject>
+
+- (void)createBackendChargeWithToken:(STPToken *)token completion:(STPTokenSubmissionHandler)completion;
 
 @end
 
+@interface ViewController : UIViewController<STPBackendCharging>
+
+@end
