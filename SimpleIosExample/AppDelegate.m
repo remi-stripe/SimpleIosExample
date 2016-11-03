@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Constants.h"
+#import <Stripe/Stripe.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (StripePublishableKey) {
+        [Stripe setDefaultPublishableKey:StripePublishableKey];
+    }
     return YES;
 }
 
